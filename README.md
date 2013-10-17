@@ -24,7 +24,9 @@ Se usa cuando estamos seguros que los cambios realizados funcionan corretamente,
 se actualiza el __Branch__ sobre el cual se está trabajando (más adelante profundizaremos en lo que son los Branches), Hay que tener en cuenta que cuando se realizan cambios en el MainLine es necesario estar seguros de que nuestros cambios funcionan, ya que en un futuro
 los demás miembros del Equipo trabajaran sobre dicha versión.
 
-## Diferencia entre Branches y Forks ## [Ver]
+## Diferencia entre Branches y Forks 
+
+[Ver]
 (http://stackoverflow.com/questions/3329943/git-branch-fork-fetch-merge-rebase-and-clone-what-are-the-differences)
 
 * Branches: 
