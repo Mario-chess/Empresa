@@ -26,7 +26,7 @@ los demás miembros del Equipo trabajaran sobre dicha versión.
 
 ## Diferencia entre Branches y Forks 
 
-[Ver]
+[Ver Diferencias]
 (http://stackoverflow.com/questions/3329943/git-branch-fork-fetch-merge-rebase-and-clone-what-are-the-differences)
 
 * Branches: 
@@ -108,10 +108,12 @@ __Si se quiere deshacer un commit anterior__, se puede usar:
 
 Aunque su uso requiere de mucho cuidado.
 
+[Comandos para deshacer cambios]
 http://blog.solucionex.com/git/borrar-ultimo-commit-con-reset-y-revert-en-git
 
 # Trabajando sobre el repositorio de otra persona
 
+[Manejo de Repositorios Externos]
 https://help.github.com/articles/fetching-a-remote
 
 
