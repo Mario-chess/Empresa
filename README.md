@@ -40,3 +40,6 @@ Manejo de Branches
 Conforme vayamos aprendiendo, vamos actualizando este Doc.
 
 
+En caso de haber creado un branch por equivocación se puede usar este comando, ya que desde la interfaz no se puede eliminar un Branch.
+
+* git push origin :branch_to_delete
