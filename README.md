@@ -27,7 +27,16 @@ Se usa cuando estamos seguros que los cambios realizados funcionan corretamente,
 se actualizará el "MainLine", es importante estar seguros de que funciona, ya que en un futuro
 los demás miembros del Equipo trabajaran sobre dicha versión.
 
+Diferencia entre Branches y Forks
+=================================
+
+* Branches:
+
+* Forks:
+
 Manejo de Branches
 ==================
 
 Conforme vayamos aprendiendo, vamos actualizando este Doc.
+
+
