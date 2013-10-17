@@ -82,6 +82,26 @@ Una vez que la nueva funcionalidad fue aceptada y adherida al Mainline, ya no ti
 
 * git branch -d Modulo_ventas
 
+## ¿Cómo volvemos a un estado anterior?
+
+__Deshacer un Merge__ para volver a un estado antes de mezclar las ramas:
+
+* git reset --hard HEAD
+
+__Ojo:__ Con esto volvemos al estado anterior del merge en nuestra __máquina de desarrollo.__, es necesario hacer un push nuevamente.
+
+__Deshacer un commit__ en caso de que nos demos cuenta que no funciona como debería.
+
+* git reset --head ORIG_HEAD
+
+__Ojo:__ Solo se puede deshacer el último commit con este comando.
+
+__Si se quiere deshacer un commit anterior__, se puede usar:
+
+* git revert
+
+Aunque su uso requiere de mucho cuidado.
+
 
 ## NOTA
 
