@@ -5,6 +5,5 @@ env:
   - DJANGO_VERSION=1.5.1
 install:
   - pip install -q Django==$DJANGO_VERSION --use-mirrors
-  - pip install -q autocomplete_light --use-mirrors
 script:
   - python manage.py test
