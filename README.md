@@ -1,8 +1,3 @@
-Empresa
-=======
-
-Es una WebApp destinada a los empresarios que deseen registrar sus empresas en la MobileApp Ubiatech.
-
 Pasos para manejar GitHub
 =========================
 
@@ -70,7 +65,7 @@ Podemos Borrarlo usando:
 
 Tener varios Branches significa que tenemos muchas funcionalidades ramificadas, pero hay que tener en cuenta que tener demasidas ramas dificultará la tarea de mantener un MainLine Completo.
 
-Supongamos que tengo un Branch "Modulo de ventas", lo trabajo y lo subo al repositorio, este Branch no esta aún en el MainLine, pero se sabe que este modulo esta completo y funciona correctamente y es portanto se lo debe agregar al MainLine. Bueno lo que se debe hacer es:
+Supongamos que tengo un Branch "Modulo de ventas", lo trabajo y lo subo al repositorio, este Branch no esta aún en el MainLine, pero se sabe que este modulo esta completo y funciona correctamente y por tanto se lo debe agregar al MainLine. Para lograr esto lo que se debe hacer es:
 
 Situarnos en el Branch Master, que representa nuestro MainLine:
 
@@ -79,3 +74,4 @@ Situarnos en el Branch Master, que representa nuestro MainLine:
 Y ahora mezclaremos nuestro master con el Brach (Funcionalidad) Modulo_ventas
 
 * git merge Modulo_ventas
+* git push origin master
