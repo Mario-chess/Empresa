@@ -62,7 +62,7 @@ Podemos Borrarlo usando:
 
 * git branch -d Name_Local_Branch
 
-## ¿Cómo mantener un MainLine, si es que se tienen varios Branches?
+## ¿Cómo mantener un MainLine?
 
 
 Tener varios Branches significa que tenemos muchas funcionalidades ramificadas, pero hay que tener en cuenta que tener demasidas ramas dificultará la tarea de mantener un MainLine Completo.
