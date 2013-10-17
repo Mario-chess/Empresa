@@ -111,7 +111,7 @@ Aunque su uso requiere de mucho cuidado.
 [Comandos para deshacer cambios]
 (http://blog.solucionex.com/git/borrar-ultimo-commit-con-reset-y-revert-en-git)
 
-# Trabajando sobre el repositorio de otra persona
+## Trabajando sobre el repositorio de otra persona
 
 [Manejo de Repositorios Externos]
 (https://help.github.com/articles/fetching-a-remote)
