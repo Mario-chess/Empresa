@@ -37,9 +37,30 @@ Diferencia entre Branches y Forks
 Manejo de Branches
 ==================
 
-Conforme vayamos aprendiendo, vamos actualizando este Doc.
+Debe estar claro, que un Brach, representa una nueva Funcionalidad (Ej. Modulo de Ventas, Modulo de Compras, etc.).
 
+Esto significa que si modificamos un branch en particular, borramos o añadimos archivos, ésta incluirá dichos cambios pero no así las demás ramas.
+
+Crear un nuevo Branch:
+
+* git branch Nuevo_Branch
+
+Cambiar de un Branch a otro. Por defecto nos encontramos en el Brach Master.
+
+* git checkout Otro_Brach
+
+Para comprobar en que Branch (Rama) nos encontramos:
+
+* git branch
 
 En caso de haber creado un branch por equivocación se puede usar este comando, ya que desde la interfaz no se puede eliminar un Branch.
 
 * git push origin :branch_to_delete
+
+En caso de que hayamos creado un Brach Local con:
+
+* git branch Name_Local_Branch
+
+Podemos Borrarlo usando:
+
+* it branch -d Name_Local_Branch
