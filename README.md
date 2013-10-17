@@ -1,50 +1,52 @@
-Pasos para manejar GitHub
+Trabajando con GitHub
 =========================
 
-Hasta el momento se espera que la máquina de desarrollo este sincronizada con GutHub a trávés
-de una clave SSH.
+Para comenzar se espera que la máquina de desarrollo este sincronizada con GitHub a trávés de una clave SSH.
+
+Ahora los pasos básicos que se deben realizar para interactuar con el Repositorio son:
 
 * git init
 * git add . (Con el punto solo se cargaran los cambios realizados)
 * git commit -m 'Comentario'
 * git remote add origin git@github.com:Mario-chess/Empresa.git
 
-Hasta acá es lo básico. Ahora dos comandos que siempre deben ser manejados, no obligatoriamente, pero si por buena practica.
+
+Hasta el momento vimos lo básico. Ahora aprenderemos dos comandos que siempre deben ser manejados, practicamente son el alma de todo.
 
 * git pull origin master
 
-Esto permite actualizar nuestro Working Copy, es decir trabajar con lo último.
-Con esto evitamos tener que estar clonando a cada momento el proyecto.
+Esto permite actualizar nuestro __Working Copy__, es decir trabajar con lo último.
+Con esto evitamos tener que clonar a cada momento el proyecto.
 
 * git push origin master
 
-Se usa cuando estamos seguros que los cambios realizados funcionan corretamente, con esto
-se actualizará el "MainLine", es importante estar seguros de que funciona, ya que en un futuro
+Se usa cuando estamos seguros que los cambios realizados funcionan corretamente, haciendo esto
+se actualiza el __Branch__ sobre el cual se está trabajando (más adelante profundizaremos en lo que son los Branches), Hay que tener en cuenta que cuando se realizan cambios en el MainLine es necesario estar seguros de que nuestros cambios funcionan, ya que en un futuro
 los demás miembros del Equipo trabajaran sobre dicha versión.
 
-Diferencia entre Branches y Forks
-=================================
+## Diferencia entre Branches y Forks
+
 
 * Branches:
 
 * Forks:
 
-Manejo de Branches
-==================
+## Manejo de Branches
+
 
 Debe estar claro, que un Brach, representa una nueva Funcionalidad (Ej. Modulo de Ventas, Modulo de Compras, etc.).
 
 Esto significa que si modificamos un branch en particular, borramos o añadimos archivos, ésta incluirá dichos cambios pero no así las demás ramas.
 
-Crear un nuevo Branch:
+__Crear un nuevo Branch:__
 
 * git branch Nuevo_Branch
 
-Cambiar de un Branch a otro. Por defecto nos encontramos en el Brach Master.
+__Cambiar de un Branch a otro. Por defecto nos encontramos en el Brach Master.__
 
 * git checkout Otro_Brach
 
-Para comprobar en que Branch (Rama) nos encontramos:
+__Para comprobar en que Branch (Rama) nos encontramos:__
 
 * git branch
 
@@ -60,18 +62,28 @@ Podemos Borrarlo usando:
 
 * git branch -d Name_Local_Branch
 
-¿Cómo mantener un MainLine, si es que se tienen varios Branches?
-================================================================
+## ¿Cómo mantener un MainLine, si es que se tienen varios Branches?
+
 
 Tener varios Branches significa que tenemos muchas funcionalidades ramificadas, pero hay que tener en cuenta que tener demasidas ramas dificultará la tarea de mantener un MainLine Completo.
 
-Supongamos que tengo un Branch "Modulo de ventas", lo trabajo y lo subo al repositorio, este Branch no esta aún en el MainLine, pero se sabe que este modulo esta completo y funciona correctamente y por tanto se lo debe agregar al MainLine. Para lograr esto lo que se debe hacer es:
+Supongamos que tengo un Branch "Modulo de ventas", trabajo sobre el y lo subo al repositorio, este Branch no esta aún en el MainLine, pero se sabe que este modulo esta completo y funciona correctamente y por tanto se lo debe agregar al MainLine. Para lograr esto lo que se debe hacer es:
 
-Situarnos en el Branch Master, que representa nuestro MainLine:
+__Situarnos en el Branch Master, que representa nuestro MainLine:__
 
 * git checkout master
 
-Y ahora mezclaremos nuestro master con el Brach (Funcionalidad) Modulo_ventas
+__Y ahora mezclaremos nuestro master con el Brach (Funcionalidad) Modulo_ventas:__
 
 * git merge Modulo_ventas
 * git push origin master
+
+Una vez que la nueva funcionalidad fue aceptada y adherida al Mainline, ya no tiene sentido mantenerla y podemos borrarla:
+
+* git branch -d Modulo_ventas
+
+
+## NOTA
+
+
+_Por costumbre yo suelo poner el nombre del Branch al final de cada pull y push, pero no es necesario, ya que basta con poner "git push origin"  y "git pull origin", ya que desde que hacemos el checkout .... se sabe cual Branch tiene el control de las operaciones._
