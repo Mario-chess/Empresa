@@ -92,15 +92,19 @@ __Ojo:__ Con esto volvemos al estado anterior del merge en nuestra __máquina de
 
 __Deshacer un commit__ en caso de que nos demos cuenta que no funciona como debería.
 
-* git reset --head ORIG_HEAD
+* git revert HEAD
+
+Y posteriormente debemos hacer un nuevo push.
 
 __Ojo:__ Solo se puede deshacer el último commit con este comando.
 
 __Si se quiere deshacer un commit anterior__, se puede usar:
 
-* git revert
+* git revert (parametros)
 
 Aunque su uso requiere de mucho cuidado.
+
+http://blog.solucionex.com/git/borrar-ultimo-commit-con-reset-y-revert-en-git
 
 
 ## NOTA
