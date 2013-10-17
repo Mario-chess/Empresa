@@ -63,4 +63,19 @@ En caso de que hayamos creado un Brach Local con:
 
 Podemos Borrarlo usando:
 
-* it branch -d Name_Local_Branch
+* git branch -d Name_Local_Branch
+
+¿Cómo mantener un MainLine, si es que se tienen varios Branches?
+================================================================
+
+Tener varios Branches significas que tenemos muchas funcionalidades ramificadas, pero hay que tener en cuenta que tener demasidas ramas dificultará la tarea de mantener un MainLine Completo.
+
+Supongamos que tengo un Branch "Modulo de ventas", lo trabajo y lo subo al repositorio, este Branch no esta aún en el MainLine, pero se sabe que este modulo esta completo y funciona y es necesario agregarlo al MainLine. Bueno lo que se debe hacer es:
+
+Descargar los cambios hechos en "Modulo de ventas"
+
+* git pull origin Modulo_ventas
+
+Con esto nuestro MainLine Local estará actualizado, y solo tendre que subirlo al branch Master, que es el que funcionará como MainLine (Puede ser cualquier otro, lo manejo así por comodidad).
+
+* git push origin master
