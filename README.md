@@ -107,3 +107,5 @@ Aunque su uso requiere de mucho cuidado.
 
 
 _Por costumbre yo suelo poner el nombre del Branch al final de cada pull y push, pero no es necesario, ya que basta con poner "git push origin"  y "git pull origin", ya que desde que hacemos el checkout .... se sabe cual Branch tiene el control de las operaciones._
+
+Prueba de deshacer un commit
